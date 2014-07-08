@@ -5,7 +5,7 @@
 #PBS -q lab
 
 # borrowing from Tom Kono's version of angsdo.sh
-ANGSD_VERSION=0.602
+ANGSD_VERSION=0.609
 ANGSD_DIR=/home/morrellp/shared/Software/angsd${ANGSD_VERSION}
 
 # outgroup sample BAM file, aligned to reference
