@@ -16,6 +16,7 @@
 #   First we specify values for all of our ANGSD analyses
 SHARED=/scratch/gonzales
 DATA_DIR=${SHARED}/ANGSD/WILD
+DATA_DM=/home/morrellp/shared/Datasets/NGS/Alignments/Deleterious_Mutations
 #   The directory of our reference sequence
 REF_DIR=${SHARED}/References/Reference_Sequences/Barley/Morex
 #   This sequence is the pseudo-scaffolds from Martin
@@ -27,8 +28,8 @@ ANGSD_DIR=/home/morrellp/shared/Software/angsd${ANGSD_VERSION}
 
 ## Ana change the list to wild bam files
 DM_BAM_LIST=/home/morrellp/gonzales/Scripts/ANGSD/Wild_Angsd/Wild_IPK_list.txt
-DM_INBREEDING=${DATA_DIR}/indF_coeff.txt
-ANCESTRAL=${DATA_DIR}/Outgroup/Hbulbosum_UMN.fa.gz
+DM_INBREEDING=${DATA_DIR}/Wild_IPK.indF
+ANCESTRAL=${DATA_DM}/Outgroup/Hbulbosum_UMN.fa.gz
 #   The number of individuals in the taxon we are analyzing
 #   We use an embedded command to do this
 #   ( wc -l < FILE will return just the line count of FILE,
@@ -73,7 +74,7 @@ N_CHROM=`expr 2 \* ${N_IND}`
 #   Hopefully these variable names make sense . . .
 UNIQUE_ONLY=1
 DO_SAF=2
-REGIONS=${DATA_DIR}/18Loci_Regions.txt
+REGIONS=${DATA_DM}/18Loci_Regions.txt
 #   Bulbosum sequence for ancestral state
 MIN_BASEQUAL=20
 BAQ=1
