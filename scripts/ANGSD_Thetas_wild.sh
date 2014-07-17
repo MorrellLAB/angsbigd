@@ -27,8 +27,8 @@ ANGSD_VERSION=0.602
 ANGSD_DIR=/home/morrellp/shared/Software/angsd${ANGSD_VERSION}
 
 ## Ana change the list to wild bam files
-DM_BAM_LIST=/home/morrellp/gonzales/Scripts/ANGSD/Wild_Angsd/Wild_IPK_list.txt
-DM_INBREEDING=${DATA_DIR}/Wild_IPK.indF
+DM_BAM_LIST=${DATA_DIR}/Wild_IPK_list.txt
+DM_INBREEDING=${DATA_DIR}/Wild_IPK_indF.txt
 ANCESTRAL=${DATA_DM}/Outgroup/Hbulbosum_UMN.fa.gz
 #   The number of individuals in the taxon we are analyzing
 #   We use an embedded command to do this
