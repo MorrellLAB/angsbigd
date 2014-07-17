@@ -14,8 +14,8 @@
 #             to directories in our MSI shared space.
 
 #   First we specify values for all of our ANGSD analyses
-SHARED=/scratch/gonzales
-DATA_DIR=${SHARED}/ANGSD/WILD
+SHARED=/home/morrellp/shared
+DATA_DIR=${SHARED}/Gonzales/ANGSD/WILD
 DATA_DM=/home/morrellp/shared/Datasets/NGS/Alignments/Deleterious_Mutations
 #   The directory of our reference sequence
 REF_DIR=${SHARED}/References/Reference_Sequences/Barley/Morex
